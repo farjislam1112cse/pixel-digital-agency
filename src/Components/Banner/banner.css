@@ -1,0 +1,59 @@
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Set the height you need for your banner */
+    overflow: hidden;
+}
+
+.video-banner__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    object-fit: cover;
+    /* Ensures the video covers the entire banner area */
+}
+
+.video-banner__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Adjust color and opacity for overlay effect */
+    z-index: 2;
+    /* Overlay sits above video */
+}
+
+
+.video-banner__content {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* Aligns children vertically */
+    align-items: center;
+    /* Centers children horizontally */
+    justify-content: center;
+    /* Centers children vertically */
+    height: 100%;
+    /* Ensure the content fills the height */
+    text-align: center;
+    /* Centers text */
+    position: relative;
+    /* Allows positioning adjustments */
+    z-index: 2;
+
+}
+
+.video-banner__content h1,
+.video-banner__content p {
+    margin: 0;
+}
