@@ -14,7 +14,7 @@ const Banner = () => {
             {/* Content over the video */}
             <div className="video-banner__overlay"></div>
             <div className="video-banner__content">
-                <h1 className='gradient text-2xl p-4  inline-block'>Welcome to Pixel For Business</h1>
+                <h1 className='text-2xl p-4  inline-block'>Welcome to Pixel For Business</h1>
                 {/* <p className='text-2xl t font-bold'>"Maximize Your Reach with Pixel-Perfect Marketing Strategies."</p> */}
                 <div className='mt-5'>
                     <TypeAnimation wrapper='span' repeat={Infinity} speed={50} className='text-8xl font-bold' sequence={[
@@ -28,6 +28,8 @@ const Banner = () => {
                         2000,
                     ]}></TypeAnimation>
                 </div>
+
+                <button className='btn btn:hover py-2 btn-lg mt-8 '> Contact Us</button>
 
 
             </div>
